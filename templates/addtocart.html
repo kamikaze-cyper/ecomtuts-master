@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block title %}Add to cart{% endblock %}
+
+{% block content %}
+<div class="container">
+    <img src="\static\img\cart.jpg">
+    <h3>Product added to cart successfully.</h3>
+
+    <button class="nav-item active">
+        <a class="nav-link" href="{% url 'ecomapp:mycart' %}">Cart </a>
+    </button>
+    <span class="text-success ">Go to Cart</span>
+
+    <button class="nav-item active">
+        <a class="nav-link" href="{% url 'ecomapp:allproducts' %}">Shop </a>
+    </button>
+    <span class="text-light bg-dark ">Shop More??</span>
+</div>
+{% endblock %}
